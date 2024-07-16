@@ -11,7 +11,7 @@
   body {
     position: relative;
   }
-  #about {padding-top:50px;height:750px;color: #000000; background-color: #FFFFFF;}
+  #about {padding-top:50px;height:850px;color: #000000; background-color: #FFFFFF;}
   #gridding {padding-top:50px;height:550px;color: #000000; background-color: #e0e0e0;}
   #azimuth {padding-top:50px;height:550px;color: #000000; background-color: #e0e0e0;}
   #terrain {padding-top:50px;height:550px;color: #000000; background-color: #e0e0e0;}
@@ -51,32 +51,36 @@
 </nav>
 
 <div id="about" class="container-fluid">
-    <div class="jumbotron text-center" style="background-color:white;">
-        <h1>Cognitive Expertise through Repetition Enhanced Simulation-based training</h1>
+  <div class="jumbotron text-center" style="background-color:white;">
+        <h1> Welcome to the CERES Training Program</h1>
     </div>
   <div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <h1 class="text-center"> Welcome to CERES</h1>
-      <h4> This webpage is designed to be self-guided, offering tasks that you can complete as needed to address gaps
-        in your training. Below, you will find five tasks that will help you refine skills such as plotting MGRS coordinates,
-        calculating azimuths, identifying terrain features, and much more.
-      </h4>
-      <h4> Either scroll down to view the available tasks or select a task in the navigation bar above.</h4>
+    <div class="col-md-12">
+      <h3> This webpage is collection of practice tools for basic land navigation skills. You will have the opportunity
+        to test your ability to: </h3>
+      <h4> <span class="glyphicon glyphicon-ok"></span> Accurately locate MGRS locations on the Quantico base topographic map</h4>
+      <h4> <span class="glyphicon glyphicon-ok"></span> Identify the azimuth heading between two given points</h4>
+      <h4> <span class="glyphicon glyphicon-ok"></span> Identify attack points for navigation</h4>
+      <h4> <span class="glyphicon glyphicon-ok"></span> Test your terrain feature reading skills</h4>
+      <h4> <span class="glyphicon glyphicon-ok"></span> You can also practice terrain association with simulated maps and landscapes</h4>
+      <h3> The training tools are provided to use at your own pace and assess your knowledge of these basic skills. You
+        can also practice each task as much as you would like to help build experience with these tasks.</h3>
       <h4 class="text-center"> ___________________________________________________________________________________________________________________</h4>
     </div>
     <div class="col-sm-6">
       <h3 class="text-center"> Feedback</h3>
-      <h4> Once you have completed one or more tasks, we would appreciate your feedback on your experience. Please
-        press the link below to fill out an anonymous feedback form. Thank you
-      </h4>
+      <h4> Use the following link to share your opinion of the training tasks, whether you thought they were too easy or
+        too challenging and if the training seemed useful overall. All your answers are anonymous, so feel free to let
+        us know what you think about the potential of these tools.</h4>
       <a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_9N5Hqn4B2wC4ojs"
            class="btn btn-info btn-block" role="button" target="_blank">Feedback Form</a>
     </div>
     <div class="col-sm-6">
       <h3 class="text-center"> Technical Issues</h3>
-      <h4> If there are any issues that are experienced in any of the tasks, please press the button below to fill out
-      a bug report so that those issues can be fixed as soon as possible. Thank you</h4>
+      <h4> These training tools are being developed with support from the Office of Naval Research as part of a research
+        program to accelerate learning. Since they are new, you may run into bugs or challenges in using the tools.
+        Please use this form to report any technical problems back to us.</h4>
       <h4> </h4>
       <a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_bJXld5syVFHXZ66"
            class="btn btn-info btn-block" role="button" target="_blank">Bug Report</a>
@@ -92,10 +96,11 @@
         <img src="Coordinate Task_1.png" class="img-thumbnail" alt="Coordinate Task">
       </div>
       <div class="col-sm-4">
-        <h4> The purpose of this task is to train on finding coordinates on a map using the Military Grid Reference System
-          (MGRS). This tasks can help refine skills for locating points with MGRS coordinates.</h4>
-        <h4>Users have to mark on the map where they believe the correct location of the given coordinates. They have access
-          to a protractor, which can help them find the answer. <br></h4>
+        <h4> The purpose of this task is to practice the process of finding MGRS coordinates on a topographic map of
+          Quantico base. This is a good starting point to get this basic process and learn the interface to this
+          application.</h4>
+        <h4>You will be given locations by MGRS and have to mark on the map the location indicated by these coordinates.
+          The online interface will allow for interacting with the map and a simulated protractor can be used as well.</h4>
         <a href="http://www.reberlab.org/file/show/ceres3.html?group=db99cc3d66833c51"
            class="btn btn-primary btn-block" role="button" target="_blank">MGRS Grid Practice Task</a>
       </div>
@@ -110,11 +115,9 @@
         <img src="Azimuth Task_1.png" class="img-thumbnail" alt="Azimuth Task">
       </div>
       <div class="col-sm-4">
-        <h4> The purpose of this task is to find the azimuth between two points. This task can help improve finding MGRS
-        coordinates as well as locating the grid and magnetic azimuth between those points.</h4>
-        <h4> Users must find two point and then input the degree that they believe the two point are
-          from one another. Users have access to a protractor to help them find the coordinate points and the degrees, as
-          well as a tool to draw a straight line between the points.<br></h4>
+        <h4> The purpose of this task is to practice finding the azimuth between two points, a starting location and
+          target goal. You will need to identify both location and use the simulated compass to find the grid-north
+          heading. You will indicate this heading and also the magnetic north corrected heading.</h4>
         <a href="http://www.reberlab.org/file/show/ceres3.html?group=39e5ee6fa219fa5b"
            class="btn btn-primary btn-block" role="button" target="_blank">Azimuth Training Task</a>
       </div>
@@ -129,9 +132,9 @@
         <img src="Terrain_Feature.png" class="img-thumbnail" alt="Terrain Feature Task">
       </div>
       <div class="col-sm-4">
-        <h4> The purpose of this task is to identify different type of terrain features on a topographic map. </h4>
-        <h4>Users will decide what is the correct feature at the given MGRS coordinates. They can use map features like
-          protractor and marking tool to help answer questions.<br></h4>
+        <h4>The purpose of this task is to train on identifying different type of terrain features on a topographic map.
+          You will be given map locations and asked to identify the terrain feature at that location from the
+          topographic contours, for example, a hill, draw, cliff, swamp, etc.</h4>
         <a href="http://www.reberlab.org/file/show/ceres3.html?group=c99e664a33b2da3d"
           class="btn btn-primary btn-block" role="button" target="_blank"> Terrain Features Task</a>
       </div>
@@ -146,10 +149,10 @@
         <img src="Attack_Point.png" class="img-thumbnail" alt="Attack Point Task">
       </div>
       <div class="col-sm-4">
-        <h4> The purpose of this task is to find the best attack points to the given objective point on a
-          topographic map. </h4>
-        <h4>Users have to decide, out of the given option, would be the best attack point to reach the objective point.
-          They can use map features like protractor and marking tool to help answer questions.<br></h4>
+        <h4>The purpose of this task is to train on finding the best attack points to the given objective point on a
+          topographic map. You will be given a map location and several alternatives to consider as attack points to use
+          in navigation. Feedback on your choice will be given related to the use of that location, its visibility,
+          distance and ease of use.</h4>
         <a href="http://www.reberlab.org/file/show/ceres3.html?group=28ac9b0a227c9e08"
           class="btn btn-primary btn-block" role="button" target="_blank">Attack Point Task</a>
       </div>
@@ -158,17 +161,17 @@
 </div>
 <div id="association" class="container-fluid">
   <div class="container">
-    <h2 class="text-center"> Terrain Association Task</h2>
+    <h2 class="text-center"> Terrain Association Task <span class="label label-warning">Experimental</span></h2>
     <div class="row">
       <div class="col-sm-8">
         <img src="Terrain Association Task.png" class="img-thumbnail" alt="Terrain Association Task">
       </div>
       <div class="col-sm-4">
-        <h4> The purpose of this task is to train users how to determine where they are located on a map using the terrain
-        and landmarks around them.</h4>
-        <h4> Users are presented a video and must use the information that they see in that video to try to determine where
-        they are located on a map. Points are credited based on how close they mark their location to the correct answer and
-        on the direction they mark that they are facing.</h4>
+        <h4>The purpose of this task is to practice connecting topographic features from a map to a view of the world
+          around you using simulated maps.</h4>
+        <h4>For this task, you will be presented with a short video clip and must use the information seen to try to
+          determine where you are located on a provided map. Points are credited based on how close they mark their
+          location to the correct answer and on the heading indicated by movement.</h4>
         <a href="http://www.reberlab.org/file/show/Ceres2.html?group=ea4a31dcc1dd912d"
           class="btn btn-primary btn-block" role="button" target="_blank">Terrain Association Task</a>
       </div>
