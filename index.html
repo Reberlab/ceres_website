@@ -1,60 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>CERES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 225px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1687A7;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #D3E0EA;
+  font-size: 20px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #1687A7;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #1687A7;
+  color: #D3E0EA;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
 
-</body>
-
-<div class="wrapper d-flex">
-	<div class="sidebar">
-        <ul class="list-group">
-            <li class="list-group-item borderless" style="background-color: #1687A7">
-                <h3 class="text-center" style="color: #D3E0EA">Contact <span class="glyphicon glyphicon-envelope"></span></h3>
-                <h5 style="color: #D3E0EA"> For any questions, comment, or concerns please email reberlab@gmail.com</h5>
-            </li>
-            <li class="list-group-item borderless" style="background-color: #1687A7">
-                <h3 class="text-center" style="color: #D3E0EA">Feedback <span class="glyphicon glyphicon-comment"></span></h3>
-                <h5 style="color: #D3E0EA"> Use the following link to share your opinion of the training tasks, whether
-                    you thought they were too easy or too challenging and if the training seemed useful overall.</h5>
-                <h5 style="color: #D3E0EA">  All your answers are anonymous, so feel free to let us know what you think
-                    about the potential of these tools.</h5>
-                <a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_9N5Hqn4B2wC4ojs"
-                   class="btn btn-info btn-block" role="button" target="_blank">Feedback Form</a>
-            </li>
-            <li class="list-group-item borderless" style="background-color: #1687A7">
-              <h3 class="text-center" style="color: #D3E0EA">Technical Issues <span class="glyphicon glyphicon-wrench"></span></h3>
-              <h5 style="color: #D3E0EA"> These tasks are being developed with support from the Office of Naval
-                  Research as part of a research program to accelerate learning. Since they are new, you may run into
-                  bugs or challenges in using the tools. Please use this form to report any technical problems back to
-                  us.</h5>
-              <a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_bJXld5syVFHXZ66"
-                 class="btn btn-info btn-block" role="button" target="_blank">Bug Report</a>
-          </li>
-          <li class="list-group-item borderless" style="background-color: #1687A7">
-              <h3 class="text-center" style="color: #D3E0EA">Updates <span class="glyphicon glyphicon-exclamation-sign"></span></h3>
-              <h5 style="color: #D3E0EA">
-                  We will be adding updates to our tasks and updating you here when it happens.
-              </h5>
-          </li>
-        </ul>
-	</div>
+<div class="sidenav">
+  <button class="dropdown-btn"> <span class="glyphicon glyphicon-envelope"></span> Contact <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-container">
+        <h4 > For any questions, comment, or concerns please email reberlab@gmail.com</h4>
+    </div>
+  <button class="dropdown-btn"> <span class="glyphicon glyphicon-comment"></span> Feedback
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <h4 style="color: #D3E0EA"> Use the following link to share your opinion of the training tasks, whether you
+          thought they were too easy or too challenging and if the training seemed useful overall.</h4>
+      <h4 style="color: #D3E0EA">  All your answers are anonymous, so feel free to let us know what you think
+          about the potential of these tools.</h4>
+      <a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_9N5Hqn4B2wC4ojs" class="btn btn"
+         role="button" target="_blank">Feedback Form</a>
+  </div>
+  <button class="dropdown-btn"> <span class="glyphicon glyphicon-wrench"></span> Technical Issues
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <h4 style="color: #D3E0EA"> These tasks are being developed with support from the Office of Naval Research as part
+          of a research program to accelerate learning. Since they are new, you may run into bugs or challenges in using
+          the tools. Please use this form to report any technical problems back to
+          us.</h4>
+      <a href="https://northwestern.az1.qualtrics.com/jfe/form/SV_bJXld5syVFHXZ66" class="btn btn"
+         role="button" target="_blank">Bug Report</a>
+  </div>
+    <button class="dropdown-btn"> <span class="glyphicon glyphicon-exclamation-sign"></span> Updates
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+      <h4 style="color: #D3E0EA"> We will be adding updates to our tasks and updating you here when it happens.</h4>
+  </div>
 </div>
 
-<div class="jumbotron text-center" style="background-color:white;">
+<div class="main">
+    <div class="jumbotron text-center" style="background-color:white;">
         <h1> Welcome to the CERES Training Program</h1>
 </div>
-
-<div class="container">
+  <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10">
             <h3> This webpage is collection of practice tools for land navigation skills. You will have the opportunity
                 to test your ability to: </h3>
             <h4> <span class="glyphicon glyphicon-ok"></span> Accurately locate MGRS locations on the Quantico base
@@ -71,10 +140,10 @@
     </div>
     <h2 class="text-center"> MGRS Grid Practice Task</h2>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
             <img src="Coordinate Task_1.png" class="img-thumbnail" alt="Coordinate Task">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <h4> The purpose of this task is to practice the process of finding MGRS coordinates on a topographic map of
                 Quantico base. This is a good starting point to get this basic process and learn the interface to this
                 application.</h4>
@@ -87,10 +156,10 @@
     </div>
     <h2 class="text-center"> Azimuth Training Task</h2>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
             <img src="Azimuth Task_1.png" class="img-thumbnail" alt="Azimuth Task">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <h4> The purpose of this task is to practice finding the azimuth between two points, a starting location and
                 target goal. You will need to identify both location and use the simulated compass to find the
                 grid-north heading. You will indicate this heading and also the magnetic north corrected heading.</h4>
@@ -100,10 +169,10 @@
     </div>
     <h2 class="text-center"> Terrain Features Task</h2>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
             <img src="Terrain_Feature.png" class="img-thumbnail" alt="Terrain Feature Task">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <h4>The purpose of this task is to train on identifying different type of terrain features on a
                 topographic map. You will be given map locations and asked to identify the terrain feature at that
                 location from the topographic contours, for example, a hill, draw, cliff, swamp, etc.</h4>
@@ -113,10 +182,10 @@
     </div>
     <h2 class="text-center"> Attack Point Task</h2>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
             <img src="Attack_Point.png" class="img-thumbnail" alt="Attack Point Task">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <h4>The purpose of this task is to train on finding the best attack points to the given objective point on a
                 topographic map. You will be given a map location and several alternatives to consider as attack points
                 to use in navigation. Feedback on your choice will be given related to the use of that location, its
@@ -127,10 +196,10 @@
     </div>
     <h2 class="text-center">  Terrain Association Task <span class="label label-warning">Experimental</span></h2>
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
             <img src="Terrain Association Task.png" class="img-thumbnail" alt="Terrain Association Task">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <h4>The purpose of this task is to practice connecting topographic features from a map to a view of the
                 world around you using simulated maps.</h4>
             <h4>For this task, you will be presented with a short video clip and must use the information seen to try to
@@ -141,4 +210,25 @@
         </div>
     </div>
 </div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
 </html>
